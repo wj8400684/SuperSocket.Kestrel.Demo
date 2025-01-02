@@ -13,10 +13,4 @@
       <PackageReference Include="SuperSocket.Kestrel" Version="2.0.0-beta.28.548" />
     </ItemGroup>
 
-    <ItemGroup>
-      <None Update="appsettings.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-
 </Project>
