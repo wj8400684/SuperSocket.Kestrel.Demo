@@ -7,6 +7,7 @@ using SuperSocket.Server.Host;
 await SuperSocketHostBuilder.Create<TextPackageInfo, LinePipelineFilter>()
     .UsePackageHandler(packageHandler: async (session, package) =>
     {
+        Console.WriteLine($"Package Received: {package}");
         await ValueTask.CompletedTask;
     })
     .UseClearIdleSession()
